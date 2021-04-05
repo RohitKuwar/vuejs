@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
+    <h1>Hello World Component</h1>
     <h1>{{ msg }}</h1>
+    <h2>data come from App component: {{username}}</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,7 +37,8 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  inject: ['username']
 }
 </script>
 
